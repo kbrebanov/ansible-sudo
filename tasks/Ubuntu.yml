@@ -1,0 +1,16 @@
+---
+# tasks file for sudo (Ubuntu specific)
+
+- name: Ensure sudo package is installed
+  apt: name=sudo state=present update_cache=yes
+  tags: sudo
+
+- name: Create sudoers files
+  template: >
+    src=sudoers_ubuntu.j2
+    dest=/etc/sudoers
+    owner=root
+    group=root
+    mode=0440
+    validate='visudo -cf %s'
+  tags: sudo

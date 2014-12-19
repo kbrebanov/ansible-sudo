@@ -1,0 +1,16 @@
+---
+# tasks file for sudo (CentOS specific)
+
+- name: Ensure sudo package is installed
+  yum: name=sudo state=present
+  tags: sudo
+
+- name: Create sudoers files
+  template: >
+    src=sudoers_centos.j2
+    dest=/etc/sudoers
+    owner=root
+    group=root
+    mode=0440
+    validate='visudo -cf %s'
+  tags: sudo
