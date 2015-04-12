@@ -1,2 +1,5 @@
 ---
 # vars file for sudo
+
+sudo_packages:
+  - sudo

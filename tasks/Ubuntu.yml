@@ -1,8 +1,9 @@
 ---
 # tasks file for sudo (Ubuntu specific)
 
-- name: Ensure sudo package is installed
-  apt: name=sudo state=present update_cache=yes
+- name: Install sudo packages
+  apt: name={{ item }} state=present update_cache=yes
+  with_items: sudo_packages
   tags: sudo
 
 - name: Create sudoers files

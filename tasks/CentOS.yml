@@ -1,8 +1,9 @@
 ---
 # tasks file for sudo (CentOS specific)
 
-- name: Ensure sudo package is installed
-  yum: name=sudo state=present
+- name: Install sudo packages
+  yum: name={{ item }} state=present
+  with_items: sudo_packages
   tags: sudo
 
 - name: Create sudoers files
