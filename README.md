@@ -1,7 +1,7 @@
 sudo
 ====
 
-[![Ansible Role](https://img.shields.io/ansible/role/3390.svg)](https://galaxy.ansible.com/list#/roles/3390)
+[![Build Status](https://travis-ci.org/kbrebanov/ansible-sudo.svg?branch=master)](https://travis-ci.org/kbrebanov/ansible-sudo)
 
 Installs and configures sudo.
 
