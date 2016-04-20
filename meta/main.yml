@@ -17,7 +17,7 @@ galaxy_info:
   # - CC-BY
   license: BSD
 
-  min_ansible_version: 1.4
+  min_ansible_version: 1.9
 
   # Optionally specify the branch Galaxy will use when accessing the GitHub
   # repo for this role. During role install, if no tags are available,
@@ -130,7 +130,7 @@ galaxy_info:
   #
   # NOTE: A tag is limited to a single word comprised of
   # alphanumeric characters. Maximum 20 tags per role.
-  
+
 dependencies: []
   # List your role dependencies here, one per line. Only
   # dependencies available via galaxy should be listed here.
