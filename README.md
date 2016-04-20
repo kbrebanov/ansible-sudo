@@ -24,10 +24,10 @@ Example Playbook
 ----------------
 
 Install sudo
-```
+```yaml
 - hosts: all
   roles:
-    - { role: kbrebanov.sudo }
+    - kbrebanov.sudo
 ```
 
 License
